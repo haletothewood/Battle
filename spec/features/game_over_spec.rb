@@ -5,6 +5,6 @@ feature 'game ends' do
       click_button 'Attack'
       click_link 'OK'
     end
-    expect(page).to have_content "David has won!"
+    expect(page).to have_content "Alex has won!"
   end
 end

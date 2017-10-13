@@ -9,7 +9,7 @@ DEFAULT_HP = 60
   end
 
   def receive_damage
-    @hp_value -= 10
+    @hp_value -= rand(30)
   end
 
 end

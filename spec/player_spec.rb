@@ -20,7 +20,9 @@ describe Player do
 
   describe '#receive_damage' do
     it 'reduces the player hp value' do
-      expect { player2.receive_damage }.to change { player2.hp_value }.by(-10)
+      srand(1)
+      # allow(player2).to receive(:receive_damage).and_return player2.hp_value - 10
+      expect { player2.receive_damage }.to change { player2.hp_value }.by(-5)
     end
   end
 end
